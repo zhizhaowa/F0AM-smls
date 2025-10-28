@@ -57,6 +57,12 @@ MetInfo = {...
 
     % AEROSOL COMPOSITION
     'pNO3'          0               0;... % particulate nitrate, molec/cm^3
+    
+    % EMISSIOMS - MOD_LA_SML
+    'EAPI'          0               0;... % alpha-pinene emission rate, mol/km2/hr
+    'EBPI'          0               0;... % beta-pinene emission rate, mol/km2/hr
+    'ELIM'          0               0;... % limonene emission rate, mol/km2/hr
+    'EISP'          0               0;... % isoprene emission rate, mol/km2/hr
     };
 
 
