@@ -21,10 +21,10 @@
 %   - Emissions:
 %       * Species:
 %           API: α-pinene, BPI: β-pinene, LIM: limonene, ISP: isoprene
-%       * Biogenic (mol km-2 h-1):
+%       * Biogenic (mol km^-2 h^-1):
 %           (a) MEGAN-Schlaerth (Schlaerth et al., 2023), "BE_<species>_a"
 %           (b) BEIS-Stockwell (Stockwell et al., 2025), "BE_<species>_b"
-%       * Anthropogenic (mol km-2 h-1), from SUNVEx 2021 inventory
+%       * Anthropogenic (mol km^-2 h^-1), from SUNVEx 2021 inventory
 %         (https://csl.noaa.gov/groups/csl7/measurements/2021sunvex/emissions/):
 %           (a) SUNVEx-15/10/75, "AE_<species>_a"
 %           (b) SUNVEx-25/25/50, "AE_<species>_b"

@@ -1,7 +1,7 @@
-% MOD_LA2025
+% MOD_LA_SML
 
-% % Convert from to mol/(km2 hr) to molecules/(cm3 s) using the formula:
-% (6.022e23 molecules/mol) * (1/BLH(m)*1000m/1km) * (1km3/1e15cm3) * (1hr/3600s)
+% % Convert from to mol/(km^2 hr) to molecules/(cm^3 s) using the formula:
+% (6.022e23 molecules/mol) * (1/BLH(m)*1000m/1km) * (1km^3/1e15cm^3) * (1hr/3600s)
 conv_fac = 1.67278e8 ./ BLH;
 
 i=i+1;
