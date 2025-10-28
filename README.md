@@ -1,3 +1,36 @@
+## New in this fork
+
+This fork includes additional files for the LAAQC 0-D box modeling simulations described in
+
+***Tasnia et al., "Diurnal Trends Differentiate Anthropogenic and Biogenic Terpenes in the Los Angeles Basin", Geophys. Res. Lett., 2025 (in prep)***
+
+The setup runs **F0AM-v4.3.0.1** with the **SAPRC-18** chemical mechanism to simulate the diurnal evolution of terpenes (α-pinene, β-pinene, limonene, and isoprene) under conditions representative of the LAAQC-2020/2022 campaign.
+
+See below for the structure of added and modified components:
+
+```bash
+F0AM-smls/
+├── Core/
+│   └── InitializeMet.m        // Modified to include emission terms
+│
+├── Chem/
+│   └── SAPRC18/               // SAPRC-18 chemical mechanism files
+│
+└── Setup/
+    └── LAAQC_smls/
+        ├── EmisRxns.m         // Emission reaction definitions for terpenes
+        ├── LAAQC_inputs.mat   // Input data: meteorology, oxidants, and emissions
+        └── run_LA_sml.m       // Main run script (see header for usage details)
+```
+
+To run:
+```matlab
+addpath(genpath('./F0AM-smls'));
+run_LA_sml
+```
+
+---
+
 ![alt text](https://github.com/AirChem/F0AM/blob/master/Docs/F0AMLogo.png "F0AM Logo")
 
 Framework for 0-D Atmospheric Modeling
